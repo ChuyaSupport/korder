@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        tools:context=".LoginActivity">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_weight="10"
+                    android:layout_marginTop="100dp"
+                    android:layout_height="wrap_content">
+        <ImageView android:layout_width="match_parent"
+                   android:layout_centerInParent="true"
+                   android:src="@mipmap/login_title"
+                   android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_height="wrap_content">
+        <EditText android:layout_width="match_parent"
+                  android:hint="请输入手机号码"
+                  android:id="@+id/login_phone_number"
+                  android:inputType="number"
+                  android:textCursorDrawable="@null"
+                  android:gravity="center"
+                  android:singleLine="true"
+                  android:layout_marginTop="10dp"
+                  android:textAllCaps="false"
+                  android:layout_marginBottom="10dp"
+                  android:background="@drawable/edittext_style"
+                  android:layout_marginLeft="150dp"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_height="wrap_content">
+        <EditText android:layout_width="match_parent"
+                  android:hint="请输入登录密码"
+                  android:id="@+id/login_password"
+                  android:inputType="textPassword"
+                  android:textCursorDrawable="@null"
+                  android:singleLine="true"
+                  android:gravity="center"
+                  android:textAllCaps="false"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:background="@drawable/edittext_style"
+                  android:layout_marginLeft="150dp"
+                  android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_weight="10"
+                    android:layout_marginBottom="200dp"
+                    android:layout_height="wrap_content">
+        <Button android:layout_width="wrap_content"
+                android:text="登录"
+                android:onClick="login"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:background="@drawable/btn_press_selector"
+                android:layout_height="36dp"
+                android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

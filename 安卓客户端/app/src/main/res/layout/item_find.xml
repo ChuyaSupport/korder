@@ -1,0 +1,120 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_find"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent">
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardUseCompatPadding="true"
+            android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content">
+            <!--    上半部分-->
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="12dp"
+                          android:layout_marginStart="12dp"
+                          android:layout_marginEnd="10dp"
+                          android:layout_marginBottom="15dp"
+                          android:layout_height="wrap_content">
+                <!--        左边部分-->
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="4"
+                              android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent"
+                              android:text="师院对面云旺超市"
+                              android:id="@+id/item_find_title"
+                              android:textStyle="bold"
+                              android:textColor="#FF5500"
+                              android:textSize="20sp"
+                              android:maxLines="1"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <!--        右边部分-->
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="2"
+                              android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                        <Button android:layout_width="50dp"
+                                android:textColor="#fff"
+                                android:text="大件"
+                                android:id="@+id/item_find_size"
+                                android:background="@drawable/btn_as_label_selector"
+                                android:layout_height="26dp"
+                                android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--    下半部分-->
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_marginStart="10dp"
+                          android:layout_marginEnd="10dp"
+                          android:layout_marginTop="5dp"
+                          android:layout_marginBottom="15dp"
+                          android:layout_height="wrap_content">
+                <!--        左边部分-->
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="4"
+                              android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                        <TextView android:layout_width="wrap_content"
+                                  android:text="送到"
+                                  android:paddingEnd="4dp"
+                                  android:textSize="16sp"
+                                  android:id="@+id/snd_to"
+                                  android:layout_height="wrap_content"/>
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_toEndOf="@id/snd_to"
+                                  android:text="淮南师范学院9单元A栋"
+                                  android:maxLines="1"
+                                  android:id="@+id/item_find_address"
+                                  android:textStyle="bold"
+                                  android:textSize="16sp"
+                                  android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <!--        右边部分-->
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="2"
+                              android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                        <RelativeLayout android:layout_width="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_height="wrap_content">
+                            <TextView android:layout_width="wrap_content"
+                                      android:text="¥"
+                                      android:textSize="16sp"
+                                      android:textStyle="bold"
+                                      android:textColor="#f00"
+                                      android:id="@+id/yuan"
+                                      android:layout_height="wrap_content"/>
+                            <TextView android:layout_width="wrap_content"
+                                      android:text="10.00"
+                                      android:id="@+id/item_find_reward"
+                                      android:textSize="16sp"
+                                      android:textStyle="bold"
+                                      android:layout_toEndOf="@id/yuan"
+                                      android:textColor="#f00"
+                                      android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

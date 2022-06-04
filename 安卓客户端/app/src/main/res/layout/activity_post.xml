@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        tools:context=".FindActivity">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_weight="12"
+                  android:layout_height="0dp">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="match_parent">
+            <!--        标题-->
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                                   app:cardUseCompatPadding="true"
+                                                   android:layout_height="match_parent">
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                        <TextView android:layout_width="wrap_content"
+                                  android:text="发布订单"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold"
+                                  android:textColor="#ff5500"
+                                  android:layout_centerInParent="true"
+                                  android:layout_margin="20dp"
+                                  android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+<!--            内容-->
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                                   app:cardUseCompatPadding="true"
+                                                   android:layout_height="match_parent">
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_height="wrap_content">
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:orientation="horizontal"
+                                      android:layout_height="wrap_content">
+                            <!--                    左边-->
+                            <LinearLayout android:layout_width="0dp"
+                                          android:layout_weight="2"
+                                          android:layout_height="wrap_content">
+                                <RelativeLayout android:layout_width="match_parent"
+                                                android:layout_height="match_parent">
+                                    <TextView android:layout_width="wrap_content"
+                                              android:text="包裹大小"
+                                              android:textColor="#ff5500"
+                                              android:textSize="16sp"
+                                              android:paddingTop="2dp"
+                                              android:layout_height="wrap_content"
+                                              android:layout_marginTop="12dp"
+                                              android:layout_marginStart="12dp"
+                                              android:layout_marginEnd="12dp"
+                                              android:layout_marginBottom="12dp"
+                                              android:layout_centerInParent="true"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <!--                    右边-->
+                            <LinearLayout android:layout_width="0dp"
+                                          android:layout_weight="5"
+                                          android:layout_height="wrap_content">
+                                <RelativeLayout android:layout_width="match_parent"
+                                                android:layout_height="match_parent">
+                                    <EditText android:layout_width="match_parent"
+                                              android:background="@drawable/edittext_style"
+                                              android:maxLines="1"
+                                              android:layout_height="wrap_content"
+                                              android:layout_marginTop="14dp"
+                                              android:layout_marginStart="20dp"
+                                              android:layout_marginEnd="20dp"
+                                              android:inputType="text"
+                                              android:hint="小件/中件/大件"
+                                              android:id="@+id/post_package_size"
+                                              android:textCursorDrawable="@null"
+                                              android:gravity="center"
+                                              android:textAllCaps="false"
+                                              android:singleLine="true"
+                                              android:layout_marginBottom="14dp"
+                                              android:layout_centerInParent="true"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:orientation="horizontal"
+                                      android:layout_height="wrap_content">
+                            <!--                    左边-->
+                            <LinearLayout android:layout_width="0dp"
+                                          android:layout_weight="2"
+                                          android:layout_height="wrap_content">
+                                <RelativeLayout android:layout_width="match_parent"
+                                                android:layout_height="match_parent">
+                                    <TextView android:layout_width="wrap_content"
+                                              android:text="取  件  码"
+                                              android:textColor="#ff5500"
+                                              android:textSize="16sp"
+                                              android:paddingTop="2dp"
+                                              android:layout_height="wrap_content"
+                                              android:layout_marginTop="12dp"
+                                              android:layout_marginStart="12dp"
+                                              android:layout_marginEnd="12dp"
+                                              android:layout_marginBottom="12dp"
+                                              android:layout_centerInParent="true"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <!--                    右边-->
+                            <LinearLayout android:layout_width="0dp"
+                                          android:layout_weight="5"
+                                          android:layout_height="wrap_content">
+                                <RelativeLayout android:layout_width="match_parent"
+                                                android:layout_height="match_parent">
+                                    <EditText android:layout_width="match_parent"
+                                              android:background="@drawable/edittext_style"
+                                              android:maxLines="1"
+                                              android:layout_height="wrap_content"
+                                              android:layout_marginTop="14dp"
+                                              android:layout_marginStart="20dp"
+                                              android:layout_marginEnd="20dp"
+                                              android:inputType="text"
+                                              android:hint="包裹取件码"
+                                              android:id="@+id/post_package_code"
+                                              android:textCursorDrawable="@null"
+                                              android:gravity="center"
+                                              android:textAllCaps="false"
+                                              android:singleLine="true"
+                                              android:layout_marginBottom="14dp"
+                                              android:layout_centerInParent="true"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:orientation="horizontal"
+                                      android:layout_height="wrap_content">
+                            <!--                    左边-->
+                            <LinearLayout android:layout_width="0dp"
+                                          android:layout_weight="2"
+                                          android:layout_height="wrap_content">
+                                <RelativeLayout android:layout_width="match_parent"
+                                                android:layout_height="match_parent">
+                                    <TextView android:layout_width="wrap_content"
+                                              android:text="取件地址"
+                                              android:textColor="#ff5500"
+                                              android:textSize="16sp"
+                                              android:paddingTop="2dp"
+                                              android:layout_height="wrap_content"
+                                              android:layout_marginTop="12dp"
+                                              android:layout_marginStart="12dp"
+                                              android:layout_marginEnd="12dp"
+                                              android:layout_marginBottom="12dp"
+                                              android:layout_centerInParent="true"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <!--                    右边-->
+                            <LinearLayout android:layout_width="0dp"
+                                          android:layout_weight="5"
+                                          android:layout_height="wrap_content">
+                                <RelativeLayout android:layout_width="match_parent"
+                                                android:layout_height="match_parent">
+                                    <EditText android:layout_width="match_parent"
+                                              android:background="@drawable/edittext_style"
+                                              android:maxLines="1"
+                                              android:inputType="text"
+                                              android:hint="驿站地址"
+                                              android:id="@+id/post_get_addr"
+                                              android:textCursorDrawable="@null"
+                                              android:gravity="center"
+                                              android:textAllCaps="false"
+                                              android:singleLine="true"
+                                              android:layout_height="wrap_content"
+                                              android:layout_marginTop="14dp"
+                                              android:layout_marginStart="20dp"
+                                              android:layout_marginEnd="20dp"
+                                              android:layout_marginBottom="14dp"
+                                              android:layout_centerInParent="true"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:orientation="horizontal"
+                                      android:layout_height="wrap_content">
+                            <!--                    左边-->
+                            <LinearLayout android:layout_width="0dp"
+                                          android:layout_weight="2"
+                                          android:layout_height="wrap_content">
+                                <RelativeLayout android:layout_width="match_parent"
+                                                android:layout_height="match_parent">
+                                    <TextView android:layout_width="wrap_content"
+                                              android:text="收件地址"
+                                              android:textColor="#ff5500"
+                                              android:textSize="16sp"
+                                              android:paddingTop="2dp"
+                                              android:layout_height="wrap_content"
+                                              android:layout_marginTop="12dp"
+                                              android:layout_marginStart="12dp"
+                                              android:layout_marginEnd="12dp"
+                                              android:layout_marginBottom="12dp"
+                                              android:layout_centerInParent="true"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <!--                    右边-->
+                            <LinearLayout android:layout_width="0dp"
+                                          android:layout_weight="5"
+                                          android:layout_height="wrap_content">
+                                <RelativeLayout android:layout_width="match_parent"
+                                                android:layout_height="match_parent">
+                                    <TextView android:layout_width="match_parent"
+                                              android:background="@drawable/edittext_style"
+                                              android:maxLines="1"
+                                              android:layout_height="wrap_content"
+                                              android:layout_marginTop="14dp"
+                                              android:layout_marginStart="20dp"
+                                              android:layout_marginEnd="20dp"
+                                              android:padding="3dp"
+                                              android:inputType="text"
+                                              android:text="选择收件地址"
+                                              android:onClick="chooseAddress"
+                                              android:id="@+id/post_addr_id"
+                                              android:textCursorDrawable="@null"
+                                              android:gravity="center"
+                                              android:textAllCaps="false"
+                                              android:singleLine="true"
+                                              android:layout_marginBottom="14dp"
+                                              tools:ignore="OnClick" android:layout_centerInParent="true"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:orientation="horizontal"
+                                      android:layout_height="wrap_content">
+                            <!--                    左边-->
+                            <LinearLayout android:layout_width="0dp"
+                                          android:layout_weight="2"
+                                          android:layout_height="wrap_content">
+                                <RelativeLayout android:layout_width="match_parent"
+                                                android:layout_height="match_parent">
+                                    <TextView android:layout_width="wrap_content"
+                                              android:text="支        付"
+                                              android:textColor="#ff5500"
+                                              android:textSize="16sp"
+                                              android:paddingTop="2dp"
+                                              android:layout_height="wrap_content"
+                                              android:layout_marginTop="12dp"
+                                              android:layout_marginStart="12dp"
+                                              android:layout_marginEnd="12dp"
+                                              android:layout_marginBottom="12dp"
+                                              android:layout_centerInParent="true"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <!--                    右边-->
+                            <LinearLayout android:layout_width="0dp"
+                                          android:layout_weight="5"
+                                          android:layout_height="wrap_content">
+                                <RelativeLayout android:layout_width="match_parent"
+                                                android:layout_height="match_parent">
+                                    <EditText android:layout_width="match_parent"
+                                              android:background="@drawable/edittext_style"
+                                              android:maxLines="1"
+                                              android:layout_height="wrap_content"
+                                              android:layout_marginTop="14dp"
+                                              android:layout_marginStart="20dp"
+                                              android:layout_marginEnd="20dp"
+                                              android:inputType="text"
+                                              android:hint="支付金额"
+                                              android:id="@+id/post_reward"
+                                              android:textCursorDrawable="@null"
+                                              android:gravity="center"
+                                              android:textAllCaps="false"
+                                              android:singleLine="true"
+                                              android:layout_marginBottom="14dp"
+                                              android:layout_centerInParent="true"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="wrap_content">
+                            <RelativeLayout android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                <Button android:layout_width="70dp"
+                                        android:background="@drawable/btn_press_selector"
+                                        android:text="发布"
+                                        android:onClick="post"
+                                        android:textColor="#fff"
+                                        android:layout_height="34dp" android:layout_marginTop="20dp"
+                                        android:layout_marginStart="20dp" android:layout_marginEnd="20dp"
+                                        android:layout_marginBottom="20dp"
+                                        tools:ignore="OnClick" android:layout_centerInParent="true"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp">
+        <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:id="@+id/tab_layout_post"
+                android:layout_height="match_parent">
+            <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:text="发现"
+                    android:id="@+id/item_post_find"
+                    android:layout_height="match_parent"/>
+            <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:text="发布"
+                    android:id="@+id/item_post_post"
+                    android:layout_height="match_parent"/>
+            <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:text="消息"
+                    android:id="@+id/item_post_message"
+                    android:layout_height="match_parent"/>
+            <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:text="我的"
+                    android:id="@+id/item_post_my"
+                    android:layout_height="match_parent"/>
+        </com.google.android.material.tabs.TabLayout>
+    </RelativeLayout>
+
+</LinearLayout>

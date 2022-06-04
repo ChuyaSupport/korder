@@ -1,0 +1,92 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_my_address"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                       app:cardUseCompatPadding="true"
+                                       android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="vertical"
+                          android:layout_margin="20dp"
+                          android:layout_height="wrap_content">
+                <!--        第一行-->
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="horizontal"
+                              android:padding="6dp"
+                              android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content"
+                                  android:text="张二猪"
+                                  android:textColor="@color/main_color"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold"
+                                  android:id="@+id/item_address_name"
+                                  android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content"
+                                  android:text="先生"
+                                  android:id="@+id/item_address_gender"
+                                  android:textColor="@color/main_color"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold"
+                                  android:layout_marginLeft="6dp"
+                                  android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <!--        第二行-->
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="horizontal"
+                              android:padding="6dp"
+                              android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content"
+                                  android:text="地址："
+                                  android:textColor="@color/main_color"
+                                  android:textSize="16sp"
+                                  android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content"
+                                  android:text="淮南师范学院9单元A栋"
+                                  android:id="@+id/item_address_address"
+                                  android:textColor="@color/main_color"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold"
+                                  android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <!--        第三行-->
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="horizontal"
+                              android:padding="6dp"
+                              android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content"
+                                  android:text="电话："
+                                  android:textColor="@color/main_color"
+                                  android:textSize="16sp"
+                                  android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content"
+                                  android:text="1732020805"
+                                  android:id="@+id/item_address_phone_number"
+                                  android:textColor="@color/main_color"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold"
+                                  android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

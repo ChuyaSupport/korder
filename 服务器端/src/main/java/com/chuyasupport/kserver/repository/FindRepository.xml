@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chuyasupport.kserver.repository.FindRepository">
+    <select id="getFindData" resultType="com.chuyasupport.kserver.entity.view.VFindResponse">
+        select * from v_find_response;
+    </select>
+    <select id="getFindDetail" resultType="com.chuyasupport.kserver.entity.view.VFindDetail">
+        select * from v_find_detail where post_id = #{postId};
+    </select>
+</mapper>

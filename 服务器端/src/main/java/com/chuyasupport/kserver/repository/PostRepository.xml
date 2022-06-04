@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chuyasupport.kserver.repository.PostRepository">
+    <insert id="post" parameterType="com.chuyasupport.kserver.entity.pojo.Post">
+        insert into t_post(post_id, user_id, package_code, get_addr, addr_id, package_size, reward)
+        values(#{postId}, #{userId}, #{packageCode}, #{getAddr}, #{addrId}, #{packageSize}, #{reward});
+    </insert>
+</mapper>

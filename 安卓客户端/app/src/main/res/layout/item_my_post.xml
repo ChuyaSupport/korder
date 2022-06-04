@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="#a4a4a4"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent"
+                  android:background="#fff"
+                  android:orientation="vertical"
+                  android:layout_marginBottom="40dp"
+                  android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           app:cardUseCompatPadding="true"
+                                           android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:padding="20dp"
+                          android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="1.5"
+                              android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content"
+                              android:text="取件地址："
+                              android:textSize="16sp"
+                              android:textColor="@color/main_color"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="2"
+                              android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent"
+                              android:text="师院对面云旺超市"
+                              android:textSize="16sp"
+                              android:id="@+id/post_get_addr"
+                              android:textColor="@color/main_color"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:layout_height="wrap_content">
+                    <Button android:layout_width="50dp"
+                            android:layout_alignParentRight="true"
+                            android:text="未完成"
+                            android:textColor="#fff"
+                            android:id="@+id/post_status"
+                            android:background="@drawable/btn_as_label_selector"
+                            android:layout_height="30dp" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           app:cardUseCompatPadding="true"
+                                           android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:padding="20dp"
+                          android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content"
+                              android:text="取  件  码："
+                              android:textSize="16sp"
+                              android:textColor="@color/main_color"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="2"
+                              android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent"
+                              android:text="66-6-6666"
+                              android:id="@+id/post_package_code"
+                              android:textSize="16sp"
+                              android:textColor="@color/main_color"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           app:cardUseCompatPadding="true"
+                                           android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:padding="20dp"
+                          android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content"
+                              android:text="送件地址："
+                              android:textSize="16sp"
+                              android:textColor="@color/main_color"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="2"
+                              android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent"
+                              android:text="师范学院9单元A栋"
+                              android:textSize="16sp"
+                              android:id="@+id/post_to_addr"
+                              android:textColor="@color/main_color"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           app:cardUseCompatPadding="true"
+                                           android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:padding="20dp"
+                          android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content"
+                              android:text="收  货  人："
+                              android:textSize="16sp"
+                              android:textColor="@color/main_color"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="2"
+                              android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent"
+                              android:text="张三"
+                              android:id="@+id/post_to_name"
+                              android:textSize="16sp"
+                              android:textColor="@color/main_color"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           app:cardUseCompatPadding="true"
+                                           android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:padding="20dp"
+                          android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content"
+                              android:text="联系电话："
+                              android:textSize="16sp"
+                              android:textColor="@color/main_color"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="2"
+                              android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent"
+                              android:text="17326020805"
+                              android:textSize="16sp"
+                              android:id="@+id/post_to_phone_number"
+                              android:textColor="@color/main_color"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           app:cardUseCompatPadding="true"
+                                           android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:padding="20dp"
+                          android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content"
+                              android:text="快件大小："
+                              android:textSize="16sp"
+                              android:textColor="@color/main_color"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="2"
+                              android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent"
+                              android:text="小件"
+                              android:id="@+id/post_package_size"
+                              android:textSize="16sp"
+                              android:textColor="@color/main_color"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           app:cardUseCompatPadding="true"
+                                           android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:padding="20dp"
+                          android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content"
+                              android:text="报        酬："
+                              android:textSize="16sp"
+                              android:textColor="@color/main_color"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="2"
+                              android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent"
+                              android:text="10.00"
+                              android:id="@+id/post_reward"
+                              android:textSize="16sp"
+                              android:textColor="@color/main_color"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           app:cardUseCompatPadding="true"
+                                           android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:padding="20dp"
+                          android:layout_height="wrap_content">
+               <RelativeLayout android:layout_width="match_parent"
+
+                               android:layout_height="wrap_content">
+                   <Button android:layout_width="90dp"
+                           android:text="确认订单"
+                           android:textColor="#fff"
+                           android:id="@+id/btn_confirm"
+                           android:textSize="16sp"
+                           android:background="@drawable/btn_press_selector"
+                           android:layout_height="34dp" android:layout_centerInParent="true"/>
+               </RelativeLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+</LinearLayout>
